@@ -1677,6 +1677,31 @@ section,
   transform: translateY(0);
 }
 
+
+.portfolio .portfolio-wrap .portfolio-info .portfolio-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.portfolio .portfolio-wrap .portfolio-info .portfolio-tags .tag {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--default-color);
+  background: color-mix(in srgb, var(--surface-color), transparent 15%);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+  transition: all 0.3s ease;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info .portfolio-tags .tag {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
