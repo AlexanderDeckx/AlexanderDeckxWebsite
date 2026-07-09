@@ -141,7 +141,10 @@
                 <li><strong>Project date</strong>: Feb -> Jun 2026</li>
               </ul>
               <div class="portfolio-links">
-              <a href="https://www.youtube.com/watch?v=B2tUlVWssBM" target="_blank"><i class="bi bi-camera-video-fill"></i> Video Showcase</a></div>
+              <a href="https://www.youtube.com/watch?v=B2tUlVWssBM" target="_blank"><i class="bi bi-camera-video-fill"></i> Video Showcase</a>
+              <a href="https://mariedem.itch.io/gp05flameborn" target="_blank"><i class="bi bi-puzzle-fill"></i> Itch Page</a>
+            </div>
+
             </div>
 
 
@@ -171,21 +174,39 @@
                   <div class="col-12">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
                       <h4>Local Multiplayer</h4>
-                      <p>This game can be played with up to 4 players on the same device!</p>
+                      <p>This game supports up to four players on the same device using Unreal Engine's built-in local multiplayer system with multiple controllers.
+                        During the class selection screen, the host player can add additional players to the game. Each added player is controlled using a connected controller.
+                      </p>
                     </div>
                   </div>
 
                   <div class="col-12">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
                       <h4>Player Interactions and Movement</h4>
-                      <p>The player can move around, attack and interact with crystals</p>
+                      <p>Players move and look around using the joysticks. They attack with R1, use their ability with L1, pick up crystals with A, and drop them with X.</p>
+                        
+                        <p>The attack system is built around an Attack Component, which stores an AttackType UObject. This makes it easy to customize and swap attacks for different classes. 
+                        Every successful attack rewards the player with ability points.
+                      
+                      </p>
+
+                        
+                        <p>Once a player reaches 100 ability points, they can perform their ability. 
+                        The ability system follows the same design principles as the attack system, making it easy to customize to other classes.
+                      
+                      </p>
+                      <img src="assets/img/portfolio/FB/Feature-1.png" alt="Portfolio Image" class="img-fluid" loading="lazy"/>
+
                     </div>
                   </div>
 
                   <div class="col-12">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
                       <h4>Classes</h4>
-                      <p>There are four distinct classes with each seperate attacks and abbilities.</p>
+                      <p>There are four unique classes, each with its own attacks and abilities. Players choose their class in the character selection screen, and each class can only be selected by one player.</p>
+                      <p>Once all players have chosen their classes, the selections are stored in the Game Instance.</p>
+                      <p>When the next level loads, the Game Mode reads these stored values and spawns the appropriate character for each player.</p>
+                      <img src="assets/img/portfolio/FB/Feature-2.png" alt="Portfolio Image" class="img-fluid" loading="lazy"/>
                     </div>
                   </div>
 
