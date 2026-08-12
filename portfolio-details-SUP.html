@@ -46,6 +46,7 @@
         <ul>
           <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
           <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="index.html#skills"><i class="bi bi-lightning-charge navicon"></i> Skills</a></li>
           <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
           <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
         </ul>
@@ -178,41 +179,51 @@
               <div class="features mt-4">
                 <h3>Features (I worked on)</h3>
                 <div class="row gy-3">
-                  <div class="col-md-6">
+                  <div class="col-12">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
                       <h4>Taking / Placing / Snapping Objects</h4>
-                      <p>The player can place / replace parts on the vehicle.</p>
+                      <p>One of the tasks the player can receive is to place or replace certain parts of the vehicle. For this, we use a snapping system that works as follows:</p>
+                      <p>To remove a part, the player can press E while looking at a snapped item. The item will be unsnapped and picked up by the player.</p>
+                      <img src="assets/img/portfolio/SUP/Feature3.png" alt="Portfolio Image" class="img-fluid" loading="lazy"/>
+
+                      <p>To place a part, the player can pick it up and move it close to the snapping collision. 
+                        Once the part is in the correct position, the player can press E to snap it into place. The player will no longer have the part equipped, and the new object will be snapped in place.</p>
+                      <img src="assets/img/portfolio/SUP/Feature2.png" alt="Portfolio Image" class="img-fluid" loading="lazy"/>
+
+                      <p>In some cases, the rotation of the part matters. For example, a battery can break if it is placed in the wrong orientation.</p>
                     </div>
                   </div>
 
-                  <div class="col-md-6">
+                  <div class="col-12">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
                       <h4>Screwing</h4>
-                      <p>The player can unscrew and screw in plates on the vehicle.</p>
+                      <p>One of the tasks can also be to unscrew or screw in certain parts of the vehicle. To do this, they can use a screwdriver and screws. 
+                        The screws can be snapped into the correct position, after which the player can move the mouse to turn the screw.</p>
+
+                      <img src="assets/img/portfolio/SUP/Feature1.png" alt="Portfolio Image" class="img-fluid" loading="lazy"/>
+
                     </div>
                   </div>
 
-                  <div class="col-md-6">
+                  <div class="col-12">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
                       <h4>Chaos Elements</h4>
-                      <p>The player can cause fires and electrical blasts</p>
+                      <p>The player can cause fires and electrical blasts, my misplacing parts or lighting oil on fire!</p>
+                      <img src="assets/img/portfolio/SUP/Feature4.png" alt="Portfolio Image" class="img-fluid" loading="lazy"/>
                     </div>
                   </div>
 
 
-                  <div class="col-md-6">
+                  <div class="col-12">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
                       <h4>Game Manager</h4>
-                      <p>The entire game is controlled by the game manager. A system that enables a certain amount of tasks at random.</p>
+                      <p>The entire game is controlled by a Game Manager. This script keeps track of all the problem objects (tasks) in the level and can activate them based on preferences. This also allows us to create levels that feel partly randomized.
+The Game Manager is also responsible for tracking the player’s score. Points can be added or removed by problem scripts when certain events happen.
+Each problem object has its own problem script, and all of these scripts are based on a shared base problem script. This makes them easy to customize while keeping them consistent. Every problem has a state, and there are four possible states: in progress, completed, failure, and danger. These states are used to send progress information back to the Game Manager.
+We also created a group problem script, which allows multiple problems to be linked together in a sequence. One problem only becomes active after the previous one is completed.</p>
                     </div>
                   </div>
 
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
-                      <h4>Task sequence</h4>
-                      <p>Some tasks can only be performed after other tasks are already completed.</p>
-                    </div>
-                  </div>
                   
                 </div>
               </div>

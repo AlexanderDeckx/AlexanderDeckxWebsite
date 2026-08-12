@@ -1228,6 +1228,138 @@ section,
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Skills Section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Capability-Based Skills
+--------------------------------------------------------------*/
+
+.skills .skills-group {
+  margin-bottom: 60px;
+}
+
+.skills .skills-group:last-child {
+  margin-bottom: 0;
+}
+
+.skills .skills-group-title {
+  margin-bottom: 30px;
+}
+
+.skills .skills-group-title h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.skills .skills-group-title h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--accent-color);
+}
+
+.skills .skills-group-title p {
+  margin: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+
+/*--------------------------------------------------------------
+# Skill Cards
+--------------------------------------------------------------*/
+
+.skills .skill-card {
+  background-color: var(--surface-color);
+  padding: 30px;
+  border-radius: 8px;
+  height: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills .skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.skills .skill-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.skills .skill-card-header h4 {
+  font-size: 20px;
+  margin: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Skill Description
+--------------------------------------------------------------*/
+
+.skills .skill-description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  margin-bottom: 20px;
+}
+
+
+/*--------------------------------------------------------------
+# Skill List
+--------------------------------------------------------------*/
+
+.skills .skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills .skill-list li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.skills .skill-list li:last-child {
+  margin-bottom: 0;
+}
+
+.skills .skill-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+
+/*--------------------------------------------------------------
+# Technical Skills
+--------------------------------------------------------------*/
+
+.skills .technical-skills {
+  margin-top: 20px;
+}
+
+
+/*--------------------------------------------------------------
+# Original Progress Bar Skills
+# Kept so the old version can still be used
+--------------------------------------------------------------*/
+
 .skills .skills-category {
   background-color: var(--surface-color);
   padding: 30px;
@@ -1248,7 +1380,7 @@ section,
   padding-bottom: 15px;
 }
 
-.skills .skills-category h3:after {
+.skills .skills-category h3::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1306,6 +1438,12 @@ section,
   transform: translateY(0);
 }
 
+
+/*--------------------------------------------------------------
+# Original Skill Boxes
+# Kept for compatibility
+--------------------------------------------------------------*/
+
 .skills .skill-box {
   background-color: var(--surface-color);
   padding: 25px 20px;
@@ -1353,7 +1491,13 @@ section,
   transition: all 0.3s;
 }
 
+
+/*--------------------------------------------------------------
+# Responsive
+--------------------------------------------------------------*/
+
 @media (max-width: 991.98px) {
+
   .skills .skills-category {
     margin-bottom: 30px;
   }
@@ -1361,9 +1505,19 @@ section,
   .skills .skills-category:last-child {
     margin-bottom: 0;
   }
+
+  .skills .skills-group {
+    margin-bottom: 45px;
+  }
+
+  .skills .skill-card {
+    margin-bottom: 0;
+  }
+
 }
 
 @media (max-width: 767.98px) {
+
   .skills .skill-box {
     margin-bottom: 20px;
   }
@@ -1371,6 +1525,19 @@ section,
   .skills .skill-box:last-child {
     margin-bottom: 0;
   }
+
+  .skills .skills-group-title h3 {
+    font-size: 24px;
+  }
+
+  .skills .skill-card {
+    padding: 25px;
+  }
+
+  .skills .skill-card-header h4 {
+    font-size: 18px;
+  }
+
 }
 
 /*--------------------------------------------------------------
