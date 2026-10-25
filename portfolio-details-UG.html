@@ -133,7 +133,7 @@
               <h3>Project Information</h3>
               <ul>
                 <li><strong>Category</strong>: Solo Projects</li>
-                <li><strong>Course</strong>: Game Engine Fundamentals</li>
+                <li><strong>Engine</strong>: Unity</li>
                 <li><strong>Project date</strong>: Nov 2025</li>
               </ul>
               <div class="portfolio-links">
@@ -147,17 +147,17 @@
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
               <h2>Project Overview</h2>
               <p>
-                I made this project for the course "Game Engine Fundamentals", where we learn the basics of both Unity and Unreal Engine.
-              </p>
-              <p>
-                During the first half of the semester we were tasked to make a prototype game in Unity.
-                To start off we all got two random words. Using these two words we had to come up with a game idea.
+                During the first half of the semester I was tasked to make a prototype game in Unity.
+                To start off I got two random words. Using these two words I had to come up with a game idea.
                 My two words were: Train & Turn.
               </p>
               <p>
                 The Game takes place on a train filled with monsters turning around a large lamp. 
                 This lamp is very dangerous and the player loses health while standing in its light. 
                 The player has to reach the end of the train by carefully clearing each train car and avoiding the lamp.
+              </p>
+              <p>
+                I found this project interesting because it was my first time working with Unity. It taught me a lot about the Unity framework and helped me understand how to create a game using the engine.
               </p>
 
               <div class="features mt-4">
@@ -166,28 +166,32 @@
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
                       <h4>Enemies</h4>
-                      <p>The game has two enemy types, a normal enemy and a lamp alerter.</p>
+                      <p>The game features two enemy types: a normal enemy and a lamp alerter. 
+                        The normal enemy attacks the player on sight using a stick, while the lamp alerter can also alert the light to the player's current position.</p>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
                       <h4>Enemy Lamp</h4>
-                      <p>This project uses "lighting" as a mechanic. The light of the lamp moves around the train. The player has to keep track of its movement and hide at the right moments.</p>
+                      <p>This project uses "lighting" as a mechanic. The light of the lamp moves around the train. The player has to keep track of its movement and hide at the right moments.
+                        To check whether the player is seen by the light, I used a dot product to determine if the player was within the light's bounds and a raycast to check if an object was blocking the light.
+                      </p>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
                       <h4>Mirror</h4>
-                      <p>The player can use a mirror to temporarily disable the lights.</p>
+                      <p>The player can pick up mirrors and use them to temporarily disable the light for a few seconds. 
+                        To achieve this, I used the same principles as the light detection system.</p>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
                       <h4>Healing</h4>
-                      <p>The player can pickup healing items around the train.</p>
+                      <p>Healing cubes are scattered throughout the train. The player can collect them to restore health.</p>
                     </div>
                   </div>
                 </div>
